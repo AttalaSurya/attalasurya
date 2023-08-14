@@ -1,0 +1,10 @@
+:root {
+    --bs-bawah: 126, 99, 63;
+}
+
+.bg-bagianbawah {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-bawah), var(--bs-bg-opacity)) !important;
+  }
+
+  

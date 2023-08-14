@@ -1,0 +1,160 @@
+:root {
+--warna:88, 219, 83;
+--warna2:215, 219, 83;
+--warna3:219, 83, 83;
+--warnakarun:255, 179, 0;
+}
+
+.level1 {
+	background-color: rgba(var(--warna));
+}
+
+.level2 {
+	background-color: rgba(var(--warna2));
+}
+
+.level3 {
+	background-color: rgba(var(--warna3));
+}
+
+.karun {
+	background-color: rgba(var(--warnakarun));
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+@keyframes slideInFromLeft {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+
+  
+@keyframes terbang {
+	0% {
+	  transform: translateX(-100%);
+	  opacity: 0;
+	}
+	100% {
+	  transform: translateX(0);
+	  transform: translateY(0);
+	  opacity: 1;
+	}
+  }
+
+  @keyframes slideInFromRight {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+
+  @keyframes slideInFromBot {
+	0% {
+	  transform: translateY(100%);
+	}
+	100% {
+	  transform: translateY(0);
+	}
+  }
+
+.tesani1{
+	animation: 0.5s ease-out 0s 1 slideInFromLeft;
+}
+
+.terbang{
+	animation: 1s ease-out 0s 1 terbang;
+}
+
+.tesani2{
+	animation: 0.5s ease-out 0s 1 slideInFromBot;
+}
+
+.tesani3{
+	animation: 0.5s ease-out 0s 1 slideInFromRight;
+}
+
+.logoo img{
+	height:100% !important;
+	width:100% !important;
+}
+
+@keyframes fade-in {
+	0%{ opacity: 0;}
+	100%{ opacity: 1;} 
+  } 
+
+  .fade-in {
+	 animation: fade-in 4s;
+ }
+
+
+ @media screen and (max-width: 1970px) {
+    .subju {
+			max-width: 100%;
+			height: auto;
+		  }
+    }
+
+@media screen and (max-width: 480px) {
+	.gim {
+			max-width: 100%;
+			height: auto;
+			}
+	}
+	@media screen and (max-width: 1970px) {
+	.duarrr {
+			max-height: 100%;
+			}
+	}
+	
+	@media screen and (max-width: 480px) {
+	.duarrr {
+			height: 20vh;
+			}
+	}
+
+@keyframes fade-cepet { 
+	0% 	{
+		opacity: 0;
+		}
+	100%	{
+				opacity: 1; 
+			}
+}
+
+.fade-cepet {
+  animation: fade-cepet 0.7s;
+}
+
+.fade-mayancepet {
+	animation: fade-cepet 0.7s;
+}
+
+#isi_iot {
+	display: block;
+}
+
+#isi_robotik {
+	display: none;
+}
+
+#isi_coding {
+	display: none; 
+}
+
+button#iot{
+	background-color: white;
+}
+
+button#robotik{
+	background-color: white;
+}
